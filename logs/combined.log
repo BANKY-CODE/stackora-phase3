@@ -1,0 +1,239 @@
+{"level":"info","message":"📖 Swagger docs: http://localhost:5000/api/v1/docs","timestamp":"2026-06-13T10:49:22.833Z"}
+{"level":"info","message":"━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━","timestamp":"2026-06-13T10:49:22.838Z"}
+{"level":"info","message":"  Stackora API — Phase 3","timestamp":"2026-06-13T10:49:22.840Z"}
+{"level":"info","message":"  Auth & User Management System","timestamp":"2026-06-13T10:49:22.842Z"}
+{"level":"info","message":"  Environment : development","timestamp":"2026-06-13T10:49:22.845Z"}
+{"level":"info","message":"━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━","timestamp":"2026-06-13T10:49:22.847Z"}
+{"level":"info","message":"📖 Swagger docs: http://localhost:5000/api/v1/docs","timestamp":"2026-06-13T11:12:36.734Z"}
+{"level":"info","message":"━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━","timestamp":"2026-06-13T11:12:36.741Z"}
+{"level":"info","message":"  Stackora API — Phase 3","timestamp":"2026-06-13T11:12:36.743Z"}
+{"level":"info","message":"  Auth & User Management System","timestamp":"2026-06-13T11:12:36.746Z"}
+{"level":"info","message":"  Environment : development","timestamp":"2026-06-13T11:12:36.753Z"}
+{"level":"info","message":"━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━","timestamp":"2026-06-13T11:12:36.755Z"}
+{"level":"warn","message":"⚠️  PostgreSQL not reachable: ","timestamp":"2026-06-13T11:12:36.815Z"}
+{"level":"warn","message":"   Server will start without a DB connection (dev mode).","timestamp":"2026-06-13T11:12:36.818Z"}
+{"level":"info","message":"✅ Server running   → http://localhost:5000","timestamp":"2026-06-13T11:12:36.833Z"}
+{"level":"info","message":"🔀 API base         → http://localhost:5000/api/v1","timestamp":"2026-06-13T11:12:36.835Z"}
+{"level":"info","message":"❤️  Health check     → http://localhost:5000/api/v1/health","timestamp":"2026-06-13T11:12:36.837Z"}
+{"level":"info","message":"🔐 Auth endpoints   → http://localhost:5000/api/v1/auth","timestamp":"2026-06-13T11:12:36.839Z"}
+{"level":"info","message":"📖 Swagger docs     → http://localhost:5000/api/v1/docs","timestamp":"2026-06-13T11:12:36.841Z"}
+{"level":"info","message":"━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━","timestamp":"2026-06-13T11:12:36.849Z"}
+{"level":"info","message":"💡 DB not required to start — runs in mock mode","timestamp":"2026-06-13T11:12:36.852Z"}
+{"level":"info","message":"   To enable DB: update .env and run: npm run migrate","timestamp":"2026-06-13T11:12:36.854Z"}
+{"level":"http","message":"\u001b[0mGET /api/v1/docs/ \u001b[36m304\u001b[0m 38.031 ms - -\u001b[0m","timestamp":"2026-06-13T11:13:48.286Z"}
+{"level":"http","message":"\u001b[0mGET /api/v1/docs/swagger-ui-init.js \u001b[32m200\u001b[0m 2.413 ms - -\u001b[0m","timestamp":"2026-06-13T11:13:48.639Z"}
+{"level":"http","message":"\u001b[0mGET /api/v1/docs/swagger-ui.css \u001b[32m200\u001b[0m 61.645 ms - -\u001b[0m","timestamp":"2026-06-13T11:13:48.708Z"}
+{"level":"http","message":"\u001b[0mGET /api/v1/docs/swagger-ui-standalone-preset.js \u001b[32m200\u001b[0m 58.267 ms - -\u001b[0m","timestamp":"2026-06-13T11:13:48.771Z"}
+{"level":"http","message":"\u001b[0mGET /api/v1/docs/swagger-ui-bundle.js \u001b[32m200\u001b[0m 58.022 ms - -\u001b[0m","timestamp":"2026-06-13T11:13:49.001Z"}
+{"level":"http","message":"\u001b[0mGET /api/v1/docs/favicon-32x32.png \u001b[32m200\u001b[0m 21.265 ms - 628\u001b[0m","timestamp":"2026-06-13T11:13:50.780Z"}
+{"level":"http","message":"\u001b[0mGET /api/v1/docs/ \u001b[36m304\u001b[0m 4.900 ms - -\u001b[0m","timestamp":"2026-06-13T11:19:14.537Z"}
+{"level":"http","message":"\u001b[0mGET /api/v1/docs/swagger-ui.css \u001b[36m304\u001b[0m 15.628 ms - -\u001b[0m","timestamp":"2026-06-13T11:19:14.829Z"}
+{"level":"http","message":"\u001b[0mGET /api/v1/docs/swagger-ui-bundle.js \u001b[36m304\u001b[0m 22.182 ms - -\u001b[0m","timestamp":"2026-06-13T11:19:14.837Z"}
+{"level":"http","message":"\u001b[0mGET /api/v1/docs/swagger-ui-standalone-preset.js \u001b[36m304\u001b[0m 25.212 ms - -\u001b[0m","timestamp":"2026-06-13T11:19:14.845Z"}
+{"level":"http","message":"\u001b[0mGET /api/v1/docs/swagger-ui-init.js \u001b[36m304\u001b[0m 3.104 ms - -\u001b[0m","timestamp":"2026-06-13T11:19:14.907Z"}
+{"level":"warn","message":"CORS blocked: http://localhost:5000","timestamp":"2026-06-13T11:20:19.363Z"}
+{"level":"error","message":"[unknown] POST /api/v1/auth/register → 500: Origin http://localhost:5000 not allowed","params":{},"query":{},"stack":"Error: Origin http://localhost:5000 not allowed\n    at origin (C:\\Users\\HP\\Downloads\\stackora-phase3\\stackora-phase3\\src\\app.js:29:8)\n    at C:\\Users\\HP\\Downloads\\stackora-phase3\\stackora-phase3\\node_modules\\cors\\lib\\index.js:219:13\n    at optionsCallback (C:\\Users\\HP\\Downloads\\stackora-phase3\\stackora-phase3\\node_modules\\cors\\lib\\index.js:199:9)\n    at corsMiddleware (C:\\Users\\HP\\Downloads\\stackora-phase3\\stackora-phase3\\node_modules\\cors\\lib\\index.js:204:7)\n    at Layer.handle [as handle_request] (C:\\Users\\HP\\Downloads\\stackora-phase3\\stackora-phase3\\node_modules\\express\\lib\\router\\layer.js:95:5)\n    at trim_prefix (C:\\Users\\HP\\Downloads\\stackora-phase3\\stackora-phase3\\node_modules\\express\\lib\\router\\index.js:328:13)\n    at C:\\Users\\HP\\Downloads\\stackora-phase3\\stackora-phase3\\node_modules\\express\\lib\\router\\index.js:286:9\n    at router.process_params (C:\\Users\\HP\\Downloads\\stackora-phase3\\stackora-phase3\\node_modules\\express\\lib\\router\\index.js:346:12)\n    at next (C:\\Users\\HP\\Downloads\\stackora-phase3\\stackora-phase3\\node_modules\\express\\lib\\router\\index.js:280:10)\n    at internalNext (C:\\Users\\HP\\Downloads\\stackora-phase3\\stackora-phase3\\node_modules\\helmet\\index.cjs:537:6)","timestamp":"2026-06-13T11:20:19.375Z"}
+{"level":"warn","message":"CORS blocked: http://localhost:5000","timestamp":"2026-06-13T11:20:22.423Z"}
+{"level":"error","message":"[unknown] POST /api/v1/auth/register → 500: Origin http://localhost:5000 not allowed","params":{},"query":{},"stack":"Error: Origin http://localhost:5000 not allowed\n    at origin (C:\\Users\\HP\\Downloads\\stackora-phase3\\stackora-phase3\\src\\app.js:29:8)\n    at C:\\Users\\HP\\Downloads\\stackora-phase3\\stackora-phase3\\node_modules\\cors\\lib\\index.js:219:13\n    at optionsCallback (C:\\Users\\HP\\Downloads\\stackora-phase3\\stackora-phase3\\node_modules\\cors\\lib\\index.js:199:9)\n    at corsMiddleware (C:\\Users\\HP\\Downloads\\stackora-phase3\\stackora-phase3\\node_modules\\cors\\lib\\index.js:204:7)\n    at Layer.handle [as handle_request] (C:\\Users\\HP\\Downloads\\stackora-phase3\\stackora-phase3\\node_modules\\express\\lib\\router\\layer.js:95:5)\n    at trim_prefix (C:\\Users\\HP\\Downloads\\stackora-phase3\\stackora-phase3\\node_modules\\express\\lib\\router\\index.js:328:13)\n    at C:\\Users\\HP\\Downloads\\stackora-phase3\\stackora-phase3\\node_modules\\express\\lib\\router\\index.js:286:9\n    at router.process_params (C:\\Users\\HP\\Downloads\\stackora-phase3\\stackora-phase3\\node_modules\\express\\lib\\router\\index.js:346:12)\n    at next (C:\\Users\\HP\\Downloads\\stackora-phase3\\stackora-phase3\\node_modules\\express\\lib\\router\\index.js:280:10)\n    at internalNext (C:\\Users\\HP\\Downloads\\stackora-phase3\\stackora-phase3\\node_modules\\helmet\\index.cjs:537:6)","timestamp":"2026-06-13T11:20:22.432Z"}
+{"level":"warn","message":"CORS blocked: http://localhost:5000","timestamp":"2026-06-13T11:20:26.247Z"}
+{"level":"error","message":"[unknown] POST /api/v1/auth/register → 500: Origin http://localhost:5000 not allowed","params":{},"query":{},"stack":"Error: Origin http://localhost:5000 not allowed\n    at origin (C:\\Users\\HP\\Downloads\\stackora-phase3\\stackora-phase3\\src\\app.js:29:8)\n    at C:\\Users\\HP\\Downloads\\stackora-phase3\\stackora-phase3\\node_modules\\cors\\lib\\index.js:219:13\n    at optionsCallback (C:\\Users\\HP\\Downloads\\stackora-phase3\\stackora-phase3\\node_modules\\cors\\lib\\index.js:199:9)\n    at corsMiddleware (C:\\Users\\HP\\Downloads\\stackora-phase3\\stackora-phase3\\node_modules\\cors\\lib\\index.js:204:7)\n    at Layer.handle [as handle_request] (C:\\Users\\HP\\Downloads\\stackora-phase3\\stackora-phase3\\node_modules\\express\\lib\\router\\layer.js:95:5)\n    at trim_prefix (C:\\Users\\HP\\Downloads\\stackora-phase3\\stackora-phase3\\node_modules\\express\\lib\\router\\index.js:328:13)\n    at C:\\Users\\HP\\Downloads\\stackora-phase3\\stackora-phase3\\node_modules\\express\\lib\\router\\index.js:286:9\n    at router.process_params (C:\\Users\\HP\\Downloads\\stackora-phase3\\stackora-phase3\\node_modules\\express\\lib\\router\\index.js:346:12)\n    at next (C:\\Users\\HP\\Downloads\\stackora-phase3\\stackora-phase3\\node_modules\\express\\lib\\router\\index.js:280:10)\n    at internalNext (C:\\Users\\HP\\Downloads\\stackora-phase3\\stackora-phase3\\node_modules\\helmet\\index.cjs:537:6)","timestamp":"2026-06-13T11:20:26.255Z"}
+{"level":"warn","message":"CORS blocked: http://localhost:5000","timestamp":"2026-06-13T11:21:50.893Z"}
+{"level":"error","message":"[unknown] POST /api/v1/auth/register → 500: Origin http://localhost:5000 not allowed","params":{},"query":{},"stack":"Error: Origin http://localhost:5000 not allowed\n    at origin (C:\\Users\\HP\\Downloads\\stackora-phase3\\stackora-phase3\\src\\app.js:29:8)\n    at C:\\Users\\HP\\Downloads\\stackora-phase3\\stackora-phase3\\node_modules\\cors\\lib\\index.js:219:13\n    at optionsCallback (C:\\Users\\HP\\Downloads\\stackora-phase3\\stackora-phase3\\node_modules\\cors\\lib\\index.js:199:9)\n    at corsMiddleware (C:\\Users\\HP\\Downloads\\stackora-phase3\\stackora-phase3\\node_modules\\cors\\lib\\index.js:204:7)\n    at Layer.handle [as handle_request] (C:\\Users\\HP\\Downloads\\stackora-phase3\\stackora-phase3\\node_modules\\express\\lib\\router\\layer.js:95:5)\n    at trim_prefix (C:\\Users\\HP\\Downloads\\stackora-phase3\\stackora-phase3\\node_modules\\express\\lib\\router\\index.js:328:13)\n    at C:\\Users\\HP\\Downloads\\stackora-phase3\\stackora-phase3\\node_modules\\express\\lib\\router\\index.js:286:9\n    at router.process_params (C:\\Users\\HP\\Downloads\\stackora-phase3\\stackora-phase3\\node_modules\\express\\lib\\router\\index.js:346:12)\n    at next (C:\\Users\\HP\\Downloads\\stackora-phase3\\stackora-phase3\\node_modules\\express\\lib\\router\\index.js:280:10)\n    at internalNext (C:\\Users\\HP\\Downloads\\stackora-phase3\\stackora-phase3\\node_modules\\helmet\\index.cjs:537:6)","timestamp":"2026-06-13T11:21:50.902Z"}
+{"level":"debug","message":"PostgreSQL: new client connected","timestamp":"2026-06-13T15:38:02.363Z"}
+{"level":"info","message":"🔄 Running Phase 3 migrations…","timestamp":"2026-06-13T15:38:02.370Z"}
+{"level":"error","message":"❌ Migration failed:","timestamp":"2026-06-13T15:38:02.416Z"}
+{"level":"debug","message":"PostgreSQL: new client connected","timestamp":"2026-06-13T15:47:25.671Z"}
+{"level":"info","message":"🔄 Running Phase 3 migrations…","timestamp":"2026-06-13T15:47:25.678Z"}
+{"level":"info","message":"✅ All migrations completed successfully","timestamp":"2026-06-13T15:47:27.763Z"}
+{"level":"info","message":"✅ Default roles seeded: user, instructor, vendor, moderator, admin","timestamp":"2026-06-13T15:47:27.769Z"}
+{"level":"info","message":"📖 Swagger docs: http://localhost:5000/api/v1/docs","timestamp":"2026-06-13T15:57:21.407Z"}
+{"level":"info","message":"━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━","timestamp":"2026-06-13T15:57:21.413Z"}
+{"level":"info","message":"  Stackora API — Phase 3","timestamp":"2026-06-13T15:57:21.416Z"}
+{"level":"info","message":"  Auth & User Management System","timestamp":"2026-06-13T15:57:21.419Z"}
+{"level":"info","message":"  Environment : development","timestamp":"2026-06-13T15:57:21.421Z"}
+{"level":"info","message":"━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━","timestamp":"2026-06-13T15:57:21.423Z"}
+{"level":"debug","message":"PostgreSQL: new client connected","timestamp":"2026-06-13T15:57:21.624Z"}
+{"level":"info","message":"✅ PostgreSQL connected — server time: Sat Jun 13 2026 08:57:21 GMT-0700 (Pacific Daylight Time)","timestamp":"2026-06-13T15:57:21.641Z"}
+{"level":"info","message":"📖 Swagger docs: http://localhost:5000/api/v1/docs","timestamp":"2026-06-13T16:01:29.979Z"}
+{"level":"info","message":"━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━","timestamp":"2026-06-13T16:01:29.985Z"}
+{"level":"info","message":"  Stackora API — Phase 3","timestamp":"2026-06-13T16:01:29.989Z"}
+{"level":"info","message":"  Auth & User Management System","timestamp":"2026-06-13T16:01:29.996Z"}
+{"level":"info","message":"  Environment : development","timestamp":"2026-06-13T16:01:29.998Z"}
+{"level":"info","message":"━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━","timestamp":"2026-06-13T16:01:30.007Z"}
+{"level":"debug","message":"PostgreSQL: new client connected","timestamp":"2026-06-13T16:01:30.210Z"}
+{"level":"info","message":"✅ PostgreSQL connected — server time: Sat Jun 13 2026 09:01:30 GMT-0700 (Pacific Daylight Time)","timestamp":"2026-06-13T16:01:30.227Z"}
+{"level":"info","message":"✅ Server running   → http://localhost:5000","timestamp":"2026-06-13T16:01:30.239Z"}
+{"level":"info","message":"🔀 API base         → http://localhost:5000/api/v1","timestamp":"2026-06-13T16:01:30.241Z"}
+{"level":"info","message":"❤️  Health check     → http://localhost:5000/api/v1/health","timestamp":"2026-06-13T16:01:30.247Z"}
+{"level":"info","message":"🔐 Auth endpoints   → http://localhost:5000/api/v1/auth","timestamp":"2026-06-13T16:01:30.254Z"}
+{"level":"info","message":"📖 Swagger docs     → http://localhost:5000/api/v1/docs","timestamp":"2026-06-13T16:01:30.255Z"}
+{"level":"info","message":"━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━","timestamp":"2026-06-13T16:01:30.260Z"}
+{"level":"info","message":"💡 DB not required to start — runs in mock mode","timestamp":"2026-06-13T16:01:30.262Z"}
+{"level":"info","message":"   To enable DB: update .env and run: npm run migrate","timestamp":"2026-06-13T16:01:30.264Z"}
+{"level":"http","message":"\u001b[0mGET /api/v1/docs/ \u001b[36m304\u001b[0m 40.831 ms - -\u001b[0m","timestamp":"2026-06-13T16:02:44.916Z"}
+{"level":"http","message":"\u001b[0mGET /api/v1/docs/swagger-ui-bundle.js \u001b[36m304\u001b[0m 10.406 ms - -\u001b[0m","timestamp":"2026-06-13T16:02:45.036Z"}
+{"level":"http","message":"\u001b[0mGET /api/v1/docs/swagger-ui-standalone-preset.js \u001b[36m304\u001b[0m 43.807 ms - -\u001b[0m","timestamp":"2026-06-13T16:02:45.066Z"}
+{"level":"http","message":"\u001b[0mGET /api/v1/docs/swagger-ui.css \u001b[36m304\u001b[0m 59.519 ms - -\u001b[0m","timestamp":"2026-06-13T16:02:45.071Z"}
+{"level":"http","message":"\u001b[0mGET /api/v1/docs/swagger-ui-init.js \u001b[36m304\u001b[0m 2.300 ms - -\u001b[0m","timestamp":"2026-06-13T16:02:45.173Z"}
+{"level":"warn","message":"CORS blocked: http://localhost:5000","timestamp":"2026-06-13T16:04:31.763Z"}
+{"level":"error","message":"[unknown] POST /api/v1/auth/register → 500: Origin http://localhost:5000 not allowed","params":{},"query":{},"stack":"Error: Origin http://localhost:5000 not allowed\n    at origin (C:\\Users\\HP\\Downloads\\stackora-phase3\\stackora-phase3\\src\\app.js:29:8)\n    at C:\\Users\\HP\\Downloads\\stackora-phase3\\stackora-phase3\\node_modules\\cors\\lib\\index.js:219:13\n    at optionsCallback (C:\\Users\\HP\\Downloads\\stackora-phase3\\stackora-phase3\\node_modules\\cors\\lib\\index.js:199:9)\n    at corsMiddleware (C:\\Users\\HP\\Downloads\\stackora-phase3\\stackora-phase3\\node_modules\\cors\\lib\\index.js:204:7)\n    at Layer.handle [as handle_request] (C:\\Users\\HP\\Downloads\\stackora-phase3\\stackora-phase3\\node_modules\\express\\lib\\router\\layer.js:95:5)\n    at trim_prefix (C:\\Users\\HP\\Downloads\\stackora-phase3\\stackora-phase3\\node_modules\\express\\lib\\router\\index.js:328:13)\n    at C:\\Users\\HP\\Downloads\\stackora-phase3\\stackora-phase3\\node_modules\\express\\lib\\router\\index.js:286:9\n    at router.process_params (C:\\Users\\HP\\Downloads\\stackora-phase3\\stackora-phase3\\node_modules\\express\\lib\\router\\index.js:346:12)\n    at next (C:\\Users\\HP\\Downloads\\stackora-phase3\\stackora-phase3\\node_modules\\express\\lib\\router\\index.js:280:10)\n    at internalNext (C:\\Users\\HP\\Downloads\\stackora-phase3\\stackora-phase3\\node_modules\\helmet\\index.cjs:537:6)","timestamp":"2026-06-13T16:04:31.775Z"}
+{"level":"warn","message":"CORS blocked: http://localhost:5000","timestamp":"2026-06-13T16:04:34.535Z"}
+{"level":"error","message":"[unknown] POST /api/v1/auth/register → 500: Origin http://localhost:5000 not allowed","params":{},"query":{},"stack":"Error: Origin http://localhost:5000 not allowed\n    at origin (C:\\Users\\HP\\Downloads\\stackora-phase3\\stackora-phase3\\src\\app.js:29:8)\n    at C:\\Users\\HP\\Downloads\\stackora-phase3\\stackora-phase3\\node_modules\\cors\\lib\\index.js:219:13\n    at optionsCallback (C:\\Users\\HP\\Downloads\\stackora-phase3\\stackora-phase3\\node_modules\\cors\\lib\\index.js:199:9)\n    at corsMiddleware (C:\\Users\\HP\\Downloads\\stackora-phase3\\stackora-phase3\\node_modules\\cors\\lib\\index.js:204:7)\n    at Layer.handle [as handle_request] (C:\\Users\\HP\\Downloads\\stackora-phase3\\stackora-phase3\\node_modules\\express\\lib\\router\\layer.js:95:5)\n    at trim_prefix (C:\\Users\\HP\\Downloads\\stackora-phase3\\stackora-phase3\\node_modules\\express\\lib\\router\\index.js:328:13)\n    at C:\\Users\\HP\\Downloads\\stackora-phase3\\stackora-phase3\\node_modules\\express\\lib\\router\\index.js:286:9\n    at router.process_params (C:\\Users\\HP\\Downloads\\stackora-phase3\\stackora-phase3\\node_modules\\express\\lib\\router\\index.js:346:12)\n    at next (C:\\Users\\HP\\Downloads\\stackora-phase3\\stackora-phase3\\node_modules\\express\\lib\\router\\index.js:280:10)\n    at internalNext (C:\\Users\\HP\\Downloads\\stackora-phase3\\stackora-phase3\\node_modules\\helmet\\index.cjs:537:6)","timestamp":"2026-06-13T16:04:34.544Z"}
+{"level":"info","message":"SIGINT — shutting down…","timestamp":"2026-06-13T16:09:59.044Z"}
+{"level":"info","message":"📖 Swagger docs: http://localhost:5000/api/v1/docs","timestamp":"2026-06-13T16:10:16.508Z"}
+{"level":"info","message":"━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━","timestamp":"2026-06-13T16:10:16.519Z"}
+{"level":"info","message":"  Stackora API — Phase 3","timestamp":"2026-06-13T16:10:16.529Z"}
+{"level":"info","message":"  Auth & User Management System","timestamp":"2026-06-13T16:10:16.533Z"}
+{"level":"info","message":"  Environment : development","timestamp":"2026-06-13T16:10:16.536Z"}
+{"level":"info","message":"━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━","timestamp":"2026-06-13T16:10:16.539Z"}
+{"level":"debug","message":"PostgreSQL: new client connected","timestamp":"2026-06-13T16:10:17.123Z"}
+{"level":"info","message":"✅ PostgreSQL connected — server time: Sat Jun 13 2026 09:10:17 GMT-0700 (Pacific Daylight Time)","timestamp":"2026-06-13T16:10:17.176Z"}
+{"level":"info","message":"✅ Server running   → http://localhost:5000","timestamp":"2026-06-13T16:10:17.232Z"}
+{"level":"info","message":"🔀 API base         → http://localhost:5000/api/v1","timestamp":"2026-06-13T16:10:17.272Z"}
+{"level":"info","message":"❤️  Health check     → http://localhost:5000/api/v1/health","timestamp":"2026-06-13T16:10:17.355Z"}
+{"level":"info","message":"🔐 Auth endpoints   → http://localhost:5000/api/v1/auth","timestamp":"2026-06-13T16:10:17.395Z"}
+{"level":"info","message":"📖 Swagger docs     → http://localhost:5000/api/v1/docs","timestamp":"2026-06-13T16:10:17.480Z"}
+{"level":"info","message":"━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━","timestamp":"2026-06-13T16:10:17.522Z"}
+{"level":"info","message":"💡 DB not required to start — runs in mock mode","timestamp":"2026-06-13T16:10:17.563Z"}
+{"level":"info","message":"   To enable DB: update .env and run: npm run migrate","timestamp":"2026-06-13T16:10:17.599Z"}
+{"level":"http","message":"\u001b[0mGET /api/v1/docs/ \u001b[36m304\u001b[0m 48.449 ms - -\u001b[0m","timestamp":"2026-06-13T16:10:56.224Z"}
+{"level":"http","message":"\u001b[0mGET /api/v1/docs/swagger-ui.css \u001b[36m304\u001b[0m 19.272 ms - -\u001b[0m","timestamp":"2026-06-13T16:10:56.525Z"}
+{"level":"http","message":"\u001b[0mGET /api/v1/docs/swagger-ui-bundle.js \u001b[36m304\u001b[0m 17.669 ms - -\u001b[0m","timestamp":"2026-06-13T16:10:56.533Z"}
+{"level":"http","message":"\u001b[0mGET /api/v1/docs/swagger-ui-standalone-preset.js \u001b[36m304\u001b[0m 20.561 ms - -\u001b[0m","timestamp":"2026-06-13T16:10:56.540Z"}
+{"level":"http","message":"\u001b[0mGET /api/v1/docs/swagger-ui-init.js \u001b[36m304\u001b[0m 3.660 ms - -\u001b[0m","timestamp":"2026-06-13T16:10:56.590Z"}
+{"level":"debug","message":"DB query [42ms]: \n      SELECT u.*,\n        COALESCE(\n          json_agg(r.name) FILTER (WHERE r.","timestamp":"2026-06-13T16:12:10.756Z"}
+{"level":"debug","message":"DB query [7ms]: SELECT * FROM users WHERE LOWER(username) = LOWER($1)","timestamp":"2026-06-13T16:12:10.768Z"}
+{"level":"debug","message":"DB query [14ms]: \n      INSERT INTO users (username, email, password_hash, first_name, last_name,","timestamp":"2026-06-13T16:12:11.796Z"}
+{"level":"debug","message":"DB query [5ms]: SELECT id FROM roles WHERE name = $1","timestamp":"2026-06-13T16:12:11.803Z"}
+{"level":"debug","message":"DB query [8ms]: \n      INSERT INTO user_roles (user_id, role_id, granted_by)\n      VALUES ($1, $","timestamp":"2026-06-13T16:12:11.817Z"}
+{"level":"debug","message":"DB query [10ms]: DELETE FROM email_verifications WHERE user_id = $1","timestamp":"2026-06-13T16:12:11.831Z"}
+{"level":"debug","message":"DB query [6ms]: \n      INSERT INTO email_verifications (user_id, token_hash, expires_at)\n      V","timestamp":"2026-06-13T16:12:11.858Z"}
+{"level":"info","message":"[EMAIL - DEV MODE] To: ade@stackora.ng | Subject: Verify your Stackora account","timestamp":"2026-06-13T16:12:11.861Z"}
+{"level":"info","message":"[EMAIL CONTENT]: Hi Ade,\n\nVerify your email: http://localhost:3000/verify-email?token=a9de700600ad22d2e58166dfd5649faecfe8e77498e81fc86a7bb79954096a064c2035eab6e1a6f128cc19e8e4236b51\n\nThis link expires in 24 hours.","timestamp":"2026-06-13T16:12:11.868Z"}
+{"level":"debug","message":"DB query [10ms]: \n        INSERT INTO audit_logs (user_id, action, entity, entity_id, metadata, i","timestamp":"2026-06-13T16:12:11.885Z"}
+{"level":"info","message":"New user registered: ade@stackora.ng","timestamp":"2026-06-13T16:12:11.890Z"}
+{"level":"http","message":"\u001b[0mPOST /api/v1/auth/register \u001b[32m201\u001b[0m 1246.139 ms - 533\u001b[0m","timestamp":"2026-06-13T16:12:11.897Z"}
+{"level":"debug","message":"DB query [6ms]: \n      SELECT u.*,\n        COALESCE(\n          json_agg(r.name) FILTER (WHERE r.","timestamp":"2026-06-13T16:12:15.333Z"}
+{"level":"warn","message":"[5cbf1f5b-f133-488a-8628-6d206851d474] POST /api/v1/auth/register → 409: Email already in use","timestamp":"2026-06-13T16:12:15.341Z"}
+{"level":"http","message":"\u001b[0mPOST /api/v1/auth/register \u001b[33m409\u001b[0m 24.730 ms - 140\u001b[0m","timestamp":"2026-06-13T16:12:15.359Z"}
+{"level":"http","message":"\u001b[0mPOST /api/v1/auth/register \u001b[33m400\u001b[0m 6.793 ms - 186\u001b[0m","timestamp":"2026-06-13T16:17:06.320Z"}
+{"level":"http","message":"\u001b[0mPOST /api/v1/auth/register \u001b[33m400\u001b[0m 5.815 ms - 186\u001b[0m","timestamp":"2026-06-13T16:17:18.557Z"}
+{"level":"debug","message":"DB query [5ms]: \n      SELECT u.*,\n        COALESCE(\n          json_agg(r.name) FILTER (WHERE r.","timestamp":"2026-06-13T16:19:05.081Z"}
+{"level":"debug","message":"DB query [4ms]: SELECT * FROM users WHERE LOWER(username) = LOWER($1)","timestamp":"2026-06-13T16:19:05.087Z"}
+{"level":"debug","message":"DB query [5ms]: \n      INSERT INTO users (username, email, password_hash, first_name, last_name,","timestamp":"2026-06-13T16:19:06.081Z"}
+{"level":"debug","message":"DB query [3ms]: SELECT id FROM roles WHERE name = $1","timestamp":"2026-06-13T16:19:06.089Z"}
+{"level":"debug","message":"DB query [3ms]: \n      INSERT INTO user_roles (user_id, role_id, granted_by)\n      VALUES ($1, $","timestamp":"2026-06-13T16:19:06.095Z"}
+{"level":"debug","message":"DB query [2ms]: DELETE FROM email_verifications WHERE user_id = $1","timestamp":"2026-06-13T16:19:06.098Z"}
+{"level":"debug","message":"DB query [3ms]: \n      INSERT INTO email_verifications (user_id, token_hash, expires_at)\n      V","timestamp":"2026-06-13T16:19:06.102Z"}
+{"level":"info","message":"[EMAIL - DEV MODE] To: chiemeliendubuisi78@gmail.com | Subject: Verify your Stackora account","timestamp":"2026-06-13T16:19:06.104Z"}
+{"level":"info","message":"[EMAIL CONTENT]: Hi Ade,\n\nVerify your email: http://localhost:3000/verify-email?token=9bfdbb056bdadee7c7a8bd8831928b0a5d83a3d128f30a0b8b761569877df6b387f5ef2762fe68be2a2ea3aec80b38d7\n\nThis link expires in 24 hours.","timestamp":"2026-06-13T16:19:06.106Z"}
+{"level":"debug","message":"DB query [5ms]: \n        INSERT INTO audit_logs (user_id, action, entity, entity_id, metadata, i","timestamp":"2026-06-13T16:19:06.120Z"}
+{"level":"info","message":"New user registered: chiemeliendubuisi78@gmail.com","timestamp":"2026-06-13T16:19:06.122Z"}
+{"level":"http","message":"\u001b[0mPOST /api/v1/auth/register \u001b[32m201\u001b[0m 1052.769 ms - 545\u001b[0m","timestamp":"2026-06-13T16:19:06.126Z"}
+{"level":"debug","message":"DB query [10ms]: \n      SELECT u.*,\n        COALESCE(\n          json_agg(r.name) FILTER (WHERE r.","timestamp":"2026-06-13T18:19:18.548Z"}
+{"level":"debug","message":"DB query [550ms]: \n      UPDATE users\n      SET login_attempts = login_attempts + 1,\n          loc","timestamp":"2026-06-13T18:19:20.050Z"}
+{"level":"warn","message":"[7cfa1d68-bee2-4010-a9f5-f97298e9fb34] POST /api/v1/auth/login → 401: Invalid email or password","timestamp":"2026-06-13T18:19:20.058Z"}
+{"level":"http","message":"\u001b[0mPOST /api/v1/auth/login \u001b[33m401\u001b[0m 1549.567 ms - 145\u001b[0m","timestamp":"2026-06-13T18:19:20.064Z"}
+{"level":"http","message":"\u001b[0mPOST /api/v1/auth/register \u001b[33m400\u001b[0m 12.811 ms - 383\u001b[0m","timestamp":"2026-06-13T18:21:40.113Z"}
+{"level":"http","message":"\u001b[0mPOST /api/v1/auth/register \u001b[33m400\u001b[0m 9.452 ms - 383\u001b[0m","timestamp":"2026-06-13T18:21:45.297Z"}
+{"level":"http","message":"\u001b[0mPOST /api/v1/auth/register \u001b[33m400\u001b[0m 5.030 ms - 204\u001b[0m","timestamp":"2026-06-13T18:21:56.184Z"}
+{"level":"debug","message":"DB query [59ms]: \n      SELECT u.*,\n        COALESCE(\n          json_agg(r.name) FILTER (WHERE r.","timestamp":"2026-06-13T18:23:06.462Z"}
+{"level":"warn","message":"[643610c0-b268-4a3b-8812-64eb5232ac58] POST /api/v1/auth/register → 409: Email already in use","timestamp":"2026-06-13T18:23:06.471Z"}
+{"level":"http","message":"\u001b[0mPOST /api/v1/auth/register \u001b[33m409\u001b[0m 77.453 ms - 140\u001b[0m","timestamp":"2026-06-13T18:23:06.478Z"}
+{"level":"debug","message":"DB query [6ms]: \n      SELECT u.*,\n        COALESCE(\n          json_agg(r.name) FILTER (WHERE r.","timestamp":"2026-06-13T18:23:31.060Z"}
+{"level":"debug","message":"DB query [3ms]: SELECT * FROM users WHERE LOWER(username) = LOWER($1)","timestamp":"2026-06-13T18:23:31.068Z"}
+{"level":"debug","message":"DB query [5ms]: \n      INSERT INTO users (username, email, password_hash, first_name, last_name,","timestamp":"2026-06-13T18:23:32.075Z"}
+{"level":"debug","message":"DB query [2ms]: SELECT id FROM roles WHERE name = $1","timestamp":"2026-06-13T18:23:32.081Z"}
+{"level":"debug","message":"DB query [4ms]: \n      INSERT INTO user_roles (user_id, role_id, granted_by)\n      VALUES ($1, $","timestamp":"2026-06-13T18:23:32.087Z"}
+{"level":"debug","message":"DB query [2ms]: DELETE FROM email_verifications WHERE user_id = $1","timestamp":"2026-06-13T18:23:32.092Z"}
+{"level":"debug","message":"DB query [4ms]: \n      INSERT INTO email_verifications (user_id, token_hash, expires_at)\n      V","timestamp":"2026-06-13T18:23:32.099Z"}
+{"level":"info","message":"[EMAIL - DEV MODE] To: bernardndubuisi97@gmail.com | Subject: Verify your Stackora account","timestamp":"2026-06-13T18:23:32.101Z"}
+{"level":"info","message":"[EMAIL CONTENT]: Hi Ndubuisi,\n\nVerify your email: http://localhost:3000/verify-email?token=2703e4f0f0946d60571ff0f281d8c2bd841b04beca81de672d9691eaac93d01d91689f59a6ff7ff052ba011587412dea\n\nThis link expires in 24 hours.","timestamp":"2026-06-13T18:23:32.103Z"}
+{"level":"debug","message":"DB query [2ms]: \n        INSERT INTO audit_logs (user_id, action, entity, entity_id, metadata, i","timestamp":"2026-06-13T18:23:32.107Z"}
+{"level":"info","message":"New user registered: bernardndubuisi97@gmail.com","timestamp":"2026-06-13T18:23:32.120Z"}
+{"level":"http","message":"\u001b[0mPOST /api/v1/auth/register \u001b[32m201\u001b[0m 1076.082 ms - 552\u001b[0m","timestamp":"2026-06-13T18:23:32.123Z"}
+{"level":"debug","message":"DB query [4ms]: \n      SELECT u.*,\n        COALESCE(\n          json_agg(r.name) FILTER (WHERE r.","timestamp":"2026-06-13T18:24:13.784Z"}
+{"level":"warn","message":"[8f8c366f-fd93-407b-82b2-9cb227a618b0] POST /api/v1/auth/login → 401: Invalid email or password","timestamp":"2026-06-13T18:24:13.793Z"}
+{"level":"http","message":"\u001b[0mPOST /api/v1/auth/login \u001b[33m401\u001b[0m 18.735 ms - 145\u001b[0m","timestamp":"2026-06-13T18:24:13.798Z"}
+{"level":"debug","message":"DB query [5ms]: \n      SELECT u.*,\n        COALESCE(\n          json_agg(r.name) FILTER (WHERE r.","timestamp":"2026-06-13T18:24:21.152Z"}
+{"level":"warn","message":"[52542e52-4a87-47e8-b573-63e2cb03af79] POST /api/v1/auth/login → 401: Invalid email or password","timestamp":"2026-06-13T18:24:21.160Z"}
+{"level":"http","message":"\u001b[0mPOST /api/v1/auth/login \u001b[33m401\u001b[0m 18.130 ms - 145\u001b[0m","timestamp":"2026-06-13T18:24:21.167Z"}
+{"level":"debug","message":"DB query [5ms]: \n      SELECT u.*,\n        COALESCE(\n          json_agg(r.name) FILTER (WHERE r.","timestamp":"2026-06-13T18:24:31.226Z"}
+{"level":"warn","message":"[943e7faa-bbb2-4ff8-b2c6-8f2a70a3d96b] POST /api/v1/auth/login → 401: Invalid email or password","timestamp":"2026-06-13T18:24:31.235Z"}
+{"level":"http","message":"\u001b[0mPOST /api/v1/auth/login \u001b[33m401\u001b[0m 20.617 ms - 145\u001b[0m","timestamp":"2026-06-13T18:24:31.242Z"}
+{"level":"debug","message":"DB query [5ms]: \n      SELECT u.*,\n        COALESCE(\n          json_agg(r.name) FILTER (WHERE r.","timestamp":"2026-06-13T18:25:18.086Z"}
+{"level":"debug","message":"DB query [3ms]: \n      UPDATE users\n      SET last_login_at = NOW(), last_login_ip = $1, login_a","timestamp":"2026-06-13T18:25:19.024Z"}
+{"level":"debug","message":"DB query [78ms]: \n      INSERT INTO refresh_tokens (user_id, token_hash, expires_at, device_info,","timestamp":"2026-06-13T18:25:19.190Z"}
+{"level":"debug","message":"DB query [3ms]: \n        INSERT INTO audit_logs (user_id, action, entity, entity_id, metadata, i","timestamp":"2026-06-13T18:25:19.196Z"}
+{"level":"http","message":"\u001b[0mPOST /api/v1/auth/login \u001b[32m200\u001b[0m 1120.339 ms - 986\u001b[0m","timestamp":"2026-06-13T18:25:19.201Z"}
+{"level":"info","message":"📖 Swagger docs: http://localhost:5000/api/v1/docs","timestamp":"2026-06-15T01:06:43.645Z"}
+{"level":"info","message":"━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━","timestamp":"2026-06-15T01:06:43.652Z"}
+{"level":"info","message":"  Stackora API — Phase 3","timestamp":"2026-06-15T01:06:43.655Z"}
+{"level":"info","message":"  Auth & User Management System","timestamp":"2026-06-15T01:06:43.657Z"}
+{"level":"info","message":"  Environment : development","timestamp":"2026-06-15T01:06:43.659Z"}
+{"level":"info","message":"━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━","timestamp":"2026-06-15T01:06:43.661Z"}
+{"level":"debug","message":"PostgreSQL: new client connected","timestamp":"2026-06-15T01:06:43.996Z"}
+{"level":"info","message":"✅ PostgreSQL connected — server time: Sun Jun 14 2026 18:06:44 GMT-0700 (Pacific Daylight Time)","timestamp":"2026-06-15T01:06:44.013Z"}
+{"level":"info","message":"✅ Server running   → http://localhost:5000","timestamp":"2026-06-15T01:06:44.025Z"}
+{"level":"info","message":"🔀 API base         → http://localhost:5000/api/v1","timestamp":"2026-06-15T01:06:44.027Z"}
+{"level":"info","message":"❤️  Health check     → http://localhost:5000/api/v1/health","timestamp":"2026-06-15T01:06:44.030Z"}
+{"level":"info","message":"🔐 Auth endpoints   → http://localhost:5000/api/v1/auth","timestamp":"2026-06-15T01:06:44.031Z"}
+{"level":"info","message":"📖 Swagger docs     → http://localhost:5000/api/v1/docs","timestamp":"2026-06-15T01:06:44.032Z"}
+{"level":"info","message":"━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━","timestamp":"2026-06-15T01:06:44.033Z"}
+{"level":"info","message":"💡 DB not required to start — runs in mock mode","timestamp":"2026-06-15T01:06:44.034Z"}
+{"level":"info","message":"   To enable DB: update .env and run: npm run migrate","timestamp":"2026-06-15T01:06:44.036Z"}
+{"level":"debug","message":"DB query [43ms]: \n      SELECT u.*,\n        COALESCE(\n          json_agg(r.name) FILTER (WHERE r.","timestamp":"2026-06-15T01:08:57.644Z"}
+{"level":"debug","message":"DB query [93ms]: \n      UPDATE users\n      SET last_login_at = NOW(), last_login_ip = $1, login_a","timestamp":"2026-06-15T01:08:58.727Z"}
+{"level":"debug","message":"DB query [7ms]: \n      INSERT INTO refresh_tokens (user_id, token_hash, expires_at, device_info,","timestamp":"2026-06-15T01:08:58.749Z"}
+{"level":"debug","message":"DB query [6ms]: \n        INSERT INTO audit_logs (user_id, action, entity, entity_id, metadata, i","timestamp":"2026-06-15T01:08:58.757Z"}
+{"level":"http","message":"\u001b[0mPOST /api/v1/auth/login \u001b[32m200\u001b[0m 1200.842 ms - -\u001b[0m","timestamp":"2026-06-15T01:08:58.787Z"}
+{"level":"http","message":"\u001b[0mGET /api/v1/auth/me \u001b[33m401\u001b[0m 31.788 ms - 89\u001b[0m","timestamp":"2026-06-15T02:52:48.363Z"}
+{"level":"http","message":"\u001b[0mGET /api/v1/auth/me \u001b[33m401\u001b[0m 3.168 ms - 89\u001b[0m","timestamp":"2026-06-15T02:52:48.375Z"}
+{"level":"debug","message":"DB query [58ms]: \n      SELECT * FROM refresh_tokens\n      WHERE token_hash = $1\n        AND revo","timestamp":"2026-06-15T02:52:48.454Z"}
+{"level":"debug","message":"DB query [6ms]: UPDATE refresh_tokens SET revoked_at = NOW() WHERE token_hash = $1","timestamp":"2026-06-15T02:52:48.469Z"}
+{"level":"warn","message":"[34e194f4-4ea5-4282-881a-ff0eee375688] POST /api/v1/auth/refresh → 401: Invalid refresh token","timestamp":"2026-06-15T02:52:48.475Z"}
+{"level":"http","message":"\u001b[0mPOST /api/v1/auth/refresh \u001b[33m401\u001b[0m 84.902 ms - 141\u001b[0m","timestamp":"2026-06-15T02:52:48.482Z"}
+{"level":"debug","message":"PostgreSQL: new client connected","timestamp":"2026-06-15T02:52:48.831Z"}
+{"level":"http","message":"\u001b[0mPOST /api/v1/auth/refresh \u001b[0m-\u001b[0m - ms - -\u001b[0m","timestamp":"2026-06-15T02:52:48.852Z"}
+{"level":"debug","message":"DB query [455ms]: \n      SELECT * FROM refresh_tokens\n      WHERE token_hash = $1\n        AND revo","timestamp":"2026-06-15T02:52:48.875Z"}
+{"level":"warn","message":"[a60fabb4-0b47-4c42-ac3f-e1c39fe0f571] POST /api/v1/auth/refresh → 401: Invalid or expired refresh token","timestamp":"2026-06-15T02:52:48.878Z"}
+{"level":"debug","message":"DB query [32ms]: \n      SELECT u.*,\n        COALESCE(\n          json_agg(r.name) FILTER (WHERE r.","timestamp":"2026-06-15T02:53:16.172Z"}
+{"level":"debug","message":"DB query [64ms]: \n      UPDATE users\n      SET last_login_at = NOW(), last_login_ip = $1, login_a","timestamp":"2026-06-15T02:53:17.232Z"}
+{"level":"debug","message":"DB query [5ms]: \n      INSERT INTO refresh_tokens (user_id, token_hash, expires_at, device_info,","timestamp":"2026-06-15T02:53:17.245Z"}
+{"level":"debug","message":"DB query [6ms]: \n        INSERT INTO audit_logs (user_id, action, entity, entity_id, metadata, i","timestamp":"2026-06-15T02:53:17.253Z"}
+{"level":"http","message":"\u001b[0mPOST /api/v1/auth/login \u001b[32m200\u001b[0m 1131.664 ms - -\u001b[0m","timestamp":"2026-06-15T02:53:17.266Z"}
+{"level":"debug","message":"DB query [55ms]: \n      SELECT u.*,\n        COALESCE(\n          json_agg(r.name) FILTER (WHERE r.","timestamp":"2026-06-15T02:57:05.474Z"}
+{"level":"http","message":"\u001b[0mGET /api/v1/auth/me \u001b[32m200\u001b[0m 66.448 ms - 555\u001b[0m","timestamp":"2026-06-15T02:57:05.485Z"}
+{"level":"debug","message":"DB query [4ms]: \n      SELECT u.*,\n        COALESCE(\n          json_agg(r.name) FILTER (WHERE r.","timestamp":"2026-06-15T02:57:05.523Z"}
+{"level":"http","message":"\u001b[0mGET /api/v1/auth/me \u001b[32m200\u001b[0m 9.876 ms - 555\u001b[0m","timestamp":"2026-06-15T02:57:05.532Z"}
+{"level":"debug","message":"DB query [6ms]: \n      SELECT u.*,\n        COALESCE(\n          json_agg(r.name) FILTER (WHERE r.","timestamp":"2026-06-15T02:57:33.979Z"}
+{"level":"http","message":"\u001b[0mGET /api/v1/auth/me \u001b[32m200\u001b[0m 20.488 ms - 555\u001b[0m","timestamp":"2026-06-15T02:57:33.988Z"}
+{"level":"debug","message":"DB query [7ms]: \n      SELECT u.*,\n        COALESCE(\n          json_agg(r.name) FILTER (WHERE r.","timestamp":"2026-06-15T02:57:34.017Z"}
+{"level":"http","message":"\u001b[0mGET /api/v1/auth/me \u001b[32m200\u001b[0m 13.160 ms - 555\u001b[0m","timestamp":"2026-06-15T02:57:34.034Z"}
+{"level":"debug","message":"DB query [7ms]: \n      SELECT u.*,\n        COALESCE(\n          json_agg(r.name) FILTER (WHERE r.","timestamp":"2026-06-15T03:07:19.905Z"}
+{"level":"http","message":"\u001b[0mGET /api/v1/auth/me \u001b[32m200\u001b[0m 18.693 ms - 555\u001b[0m","timestamp":"2026-06-15T03:07:19.919Z"}
+{"level":"debug","message":"DB query [5ms]: \n      SELECT u.*,\n        COALESCE(\n          json_agg(r.name) FILTER (WHERE r.","timestamp":"2026-06-15T03:07:19.931Z"}
+{"level":"http","message":"\u001b[0mGET /api/v1/auth/me \u001b[32m200\u001b[0m 43.741 ms - 555\u001b[0m","timestamp":"2026-06-15T03:07:19.971Z"}
+{"level":"http","message":"\u001b[0mGET /api/v1/auth/me \u001b[33m401\u001b[0m 16.857 ms - 89\u001b[0m","timestamp":"2026-06-15T08:14:02.486Z"}
+{"level":"http","message":"\u001b[0mGET /api/v1/auth/me \u001b[33m401\u001b[0m 14.216 ms - 89\u001b[0m","timestamp":"2026-06-15T08:14:02.534Z"}
+{"level":"debug","message":"DB query [12ms]: \n      SELECT * FROM refresh_tokens\n      WHERE token_hash = $1\n        AND revo","timestamp":"2026-06-15T08:14:02.568Z"}
+{"level":"debug","message":"DB query [9ms]: UPDATE refresh_tokens SET revoked_at = NOW() WHERE token_hash = $1","timestamp":"2026-06-15T08:14:02.580Z"}
+{"level":"warn","message":"[2aa23351-6c5e-4419-9fea-1baf2b53d8a0] POST /api/v1/auth/refresh → 401: Invalid refresh token","timestamp":"2026-06-15T08:14:02.583Z"}
+{"level":"http","message":"\u001b[0mPOST /api/v1/auth/refresh \u001b[33m401\u001b[0m 30.334 ms - 141\u001b[0m","timestamp":"2026-06-15T08:14:02.587Z"}
+{"level":"debug","message":"DB query [58ms]: \n      SELECT * FROM refresh_tokens\n      WHERE token_hash = $1\n        AND revo","timestamp":"2026-06-15T08:14:02.610Z"}
+{"level":"warn","message":"[a27f3679-342d-42f5-bc41-d6740e244d9b] POST /api/v1/auth/refresh → 401: Invalid or expired refresh token","timestamp":"2026-06-15T08:14:02.621Z"}
+{"level":"http","message":"\u001b[0mPOST /api/v1/auth/refresh \u001b[33m401\u001b[0m 73.871 ms - 152\u001b[0m","timestamp":"2026-06-15T08:14:02.628Z"}
+{"level":"debug","message":"DB query [42ms]: \n      SELECT u.*,\n        COALESCE(\n          json_agg(r.name) FILTER (WHERE r.","timestamp":"2026-06-15T08:14:38.566Z"}
+{"level":"debug","message":"DB query [4ms]: \n      UPDATE users\n      SET last_login_at = NOW(), last_login_ip = $1, login_a","timestamp":"2026-06-15T08:14:39.544Z"}
+{"level":"debug","message":"DB query [6ms]: \n      INSERT INTO refresh_tokens (user_id, token_hash, expires_at, device_info,","timestamp":"2026-06-15T08:14:39.555Z"}
+{"level":"debug","message":"DB query [3ms]: \n        INSERT INTO audit_logs (user_id, action, entity, entity_id, metadata, i","timestamp":"2026-06-15T08:14:39.560Z"}
+{"level":"http","message":"\u001b[0mPOST /api/v1/auth/login \u001b[32m200\u001b[0m 1052.227 ms - -\u001b[0m","timestamp":"2026-06-15T08:14:39.568Z"}
+{"level":"http","message":"\u001b[0mGET /api/v1/auth/me \u001b[33m401\u001b[0m 13.616 ms - 89\u001b[0m","timestamp":"2026-06-15T19:31:21.552Z"}
+{"level":"http","message":"\u001b[0mGET /api/v1/auth/me \u001b[33m401\u001b[0m 2.866 ms - 89\u001b[0m","timestamp":"2026-06-15T19:31:21.615Z"}
+{"level":"debug","message":"DB query [12ms]: \n      SELECT * FROM refresh_tokens\n      WHERE token_hash = $1\n        AND revo","timestamp":"2026-06-15T19:31:21.640Z"}
+{"level":"debug","message":"DB query [22ms]: UPDATE refresh_tokens SET revoked_at = NOW() WHERE token_hash = $1","timestamp":"2026-06-15T19:31:21.673Z"}
+{"level":"warn","message":"[29f04ce9-a55f-4ffc-a2d6-a3534ef3223c] POST /api/v1/auth/refresh → 401: Invalid refresh token","timestamp":"2026-06-15T19:31:21.682Z"}
+{"level":"http","message":"\u001b[0mPOST /api/v1/auth/refresh \u001b[33m401\u001b[0m 58.860 ms - 141\u001b[0m","timestamp":"2026-06-15T19:31:21.687Z"}
+{"level":"debug","message":"DB query [2ms]: \n      SELECT * FROM refresh_tokens\n      WHERE token_hash = $1\n        AND revo","timestamp":"2026-06-15T19:31:21.696Z"}
+{"level":"warn","message":"[223fb2b2-413e-49fa-82f6-75365a6051e5] POST /api/v1/auth/refresh → 401: Invalid or expired refresh token","timestamp":"2026-06-15T19:31:21.699Z"}
+{"level":"http","message":"\u001b[0mPOST /api/v1/auth/refresh \u001b[33m401\u001b[0m 8.452 ms - 152\u001b[0m","timestamp":"2026-06-15T19:31:21.704Z"}
