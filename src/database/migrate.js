@@ -5,8 +5,14 @@
  */
 
 require('dotenv').config();
-const { pool } = require('../config/database');
-const logger   = require('../utils/logger');
+const { Pool } = require('pg');
+const pool = new Pool({
+  connectionString: process.env.DATABASE_URL,
+  ssl: { rejectUnauthorized: false }
+});
+const logger  = require('../utils/logger');
+
+
 
 const migrations = [
 
