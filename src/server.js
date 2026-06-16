@@ -22,7 +22,7 @@ async function start() {
     logger.info(`🔐 Auth endpoints   → http://localhost:${PORT}/api/${API_VER}/auth`);
     logger.info(`📖 Swagger docs     → http://localhost:${PORT}/api/${API_VER}/docs`);
     logger.info('━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━');
-    if (!config.isDev || true) {
+    if (false) {
       logger.info('💡 DB not required to start — runs in mock mode');
       logger.info('   To enable DB: update .env and run: npm run migrate');
     }
