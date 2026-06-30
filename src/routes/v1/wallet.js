@@ -7,17 +7,12 @@ const { uuidParam, paginationQuery, walletAmount, serviceType } = require('../..
 const { success, created, paginated } = require('../../utils/response');
 const { getPagination } = require('../../utils/pagination');
 const walletService = require('../../services/walletService');
+const { query } = require('../../config/database');
 
 /**
  * @swagger
- * tags:
- *   name: Wallet
- *   description: Fintech, VTU services, and transaction management
- *
  * /wallet/balance:
- *   get:
- *     summary: Get wallet balance
- *     tags: [Wallet]
+ *   get: { summary: Get wallet balance, tags: [Wallet] }
  */
 router.get('/balance', authenticate, async (req, res, next) => {
   try {
@@ -31,17 +26,43 @@ router.get('/balance', authenticate, async (req, res, next) => {
         isFrozen:    result.isFrozen,
       },
     });
-  } catch (err) {
-    next(err);
-  }
+  } catch (err) { next(err); }
+});
+
+// ──────────────────────────────────────────────────────────────
+// ⚠️ TEMPORARY TEST ROUTE — DELETE BEFORE GOING LIVE
+// Adds test money to the logged-in user's wallet. No real payment.
+// ──────────────────────────────────────────────────────────────
+router.post('/test-credit', authenticate, async (req, res, next) => {
+  try {
+    const amountKobo = Math.round(Number(req.body.amount) * 100);
+    if (!Number.isInteger(amountKobo) || amountKobo <= 0) {
+      return res.status(400).json({ success: false, message: 'Invalid amount' });
+    }
+    await walletService.getOrCreateWallet(req.user.id);
+    const updated = await query(
+      'UPDATE wallets SET balance = balance + $1 WHERE user_id = $2 RETURNING balance',
+      [amountKobo, req.user.id]
+    );
+    const balanceKobo = Number(updated.rows[0].balance);
+    const ref = walletService.generateReference('TST');
+    await query(
+      `INSERT INTO transactions
+         (user_id, type, direction, amount, balance_after, status, reference, description)
+       VALUES ($1, 'fund', 'credit', $2, $3, 'success', $4, 'Test credit')`,
+      [req.user.id, amountKobo, balanceKobo, ref]
+    );
+    return success(res, {
+      message: 'Test credit added',
+      data: { balanceKobo, balanceNaira: balanceKobo / 100, reference: ref },
+    });
+  } catch (err) { next(err); }
 });
 
 /**
  * @swagger
  * /wallet/transactions:
- *   get:
- *     summary: List wallet transactions
- *     tags: [Wallet]
+ *   get: { summary: List wallet transactions, tags: [Wallet] }
  */
 router.get('/transactions', authenticate, paginationQuery, validate, (req, res) => {
   const { page, limit } = getPagination(req.query);
@@ -51,9 +72,7 @@ router.get('/transactions', authenticate, paginationQuery, validate, (req, res) 
 /**
  * @swagger
  * /wallet/fund:
- *   post:
- *     summary: Fund wallet
- *     tags: [Wallet]
+ *   post: { summary: Fund wallet, tags: [Wallet] }
  */
 router.post('/fund', authenticate, walletLimiter, [walletAmount], validate, (req, res) => {
   return created(res, {
@@ -65,9 +84,7 @@ router.post('/fund', authenticate, walletLimiter, [walletAmount], validate, (req
 /**
  * @swagger
  * /wallet/withdraw:
- *   post:
- *     summary: Withdraw from wallet
- *     tags: [Wallet]
+ *   post: { summary: Withdraw from wallet, tags: [Wallet] }
  */
 router.post('/withdraw', authenticate, walletLimiter, [
   walletAmount,
@@ -83,9 +100,7 @@ router.post('/withdraw', authenticate, walletLimiter, [
 /**
  * @swagger
  * /wallet/transfer:
- *   post:
- *     summary: Transfer to another user
- *     tags: [Wallet]
+ *   post: { summary: Transfer to another user, tags: [Wallet] }
  */
 router.post('/transfer', authenticate, walletLimiter, [
   walletAmount,
@@ -99,10 +114,7 @@ router.post('/transfer', authenticate, walletLimiter, [
       amountKobo,
       req.body.note
     );
-    return created(res, {
-      message: 'Transfer successful',
-      data: result,
-    });
+    return created(res, { message: 'Transfer successful', data: result });
   } catch (err) {
     if (err.status) {
       return res.status(err.status).json({ success: false, message: err.message });
@@ -114,9 +126,7 @@ router.post('/transfer', authenticate, walletLimiter, [
 /**
  * @swagger
  * /wallet/vtu:
- *   post:
- *     summary: Purchase a VTU service (airtime, data, bills)
- *     tags: [Wallet]
+ *   post: { summary: Purchase a VTU service, tags: [Wallet] }
  */
 router.post('/vtu', authenticate, walletLimiter, [serviceType, walletAmount], validate, (req, res) => {
   return created(res, {
