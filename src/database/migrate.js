@@ -1,6 +1,6 @@
 /**
  * Stackora Phase 3 — Database Migration
- * Creates all authentication and user management tables.
+ * Creates all authentication, user management, and wallet tables.
  * Run: node src/database/migrate.js
  */
 
@@ -105,6 +105,37 @@ const migrations = [
     created_at TIMESTAMPTZ NOT NULL DEFAULT NOW()
   )`,
 
+  // ── 8. Wallets ───────────────────────────────────────────────
+  `CREATE TABLE IF NOT EXISTS wallets (
+    id          UUID        PRIMARY KEY DEFAULT gen_random_uuid(),
+    user_id     UUID        NOT NULL UNIQUE REFERENCES users(id) ON DELETE CASCADE,
+    balance     BIGINT      NOT NULL DEFAULT 0,
+    currency    VARCHAR(3)  NOT NULL DEFAULT 'NGN',
+    is_frozen   BOOLEAN     NOT NULL DEFAULT FALSE,
+    created_at  TIMESTAMPTZ NOT NULL DEFAULT NOW(),
+    updated_at  TIMESTAMPTZ NOT NULL DEFAULT NOW()
+  )`,
+
+  // ── 9. Transactions ──────────────────────────────────────────
+  `CREATE TABLE IF NOT EXISTS transactions (
+    id              UUID         PRIMARY KEY DEFAULT gen_random_uuid(),
+    user_id         UUID         NOT NULL REFERENCES users(id) ON DELETE CASCADE,
+    type            VARCHAR(20)  NOT NULL,
+    direction       VARCHAR(6)   NOT NULL,
+    amount          BIGINT       NOT NULL,
+    balance_after   BIGINT,
+    status          VARCHAR(20)  NOT NULL DEFAULT 'pending',
+    currency        VARCHAR(3)   NOT NULL DEFAULT 'NGN',
+    reference       VARCHAR(100) NOT NULL UNIQUE,
+    provider        VARCHAR(30),
+    provider_ref    VARCHAR(150),
+    counterparty_id UUID         REFERENCES users(id) ON DELETE SET NULL,
+    description     TEXT,
+    metadata        JSONB        NOT NULL DEFAULT '{}',
+    created_at      TIMESTAMPTZ  NOT NULL DEFAULT NOW(),
+    updated_at      TIMESTAMPTZ  NOT NULL DEFAULT NOW()
+  )`,
+
   // ── Indexes ──────────────────────────────────────────────────
   `CREATE INDEX IF NOT EXISTS idx_users_email    ON users(email)`,
   `CREATE INDEX IF NOT EXISTS idx_users_username ON users(username)`,
@@ -114,6 +145,8 @@ const migrations = [
   `CREATE INDEX IF NOT EXISTS idx_password_resets_hash ON password_resets(token_hash)`,
   `CREATE INDEX IF NOT EXISTS idx_email_verifications_hash ON email_verifications(token_hash)`,
   `CREATE INDEX IF NOT EXISTS idx_audit_logs_user_id ON audit_logs(user_id)`,
+  `CREATE INDEX IF NOT EXISTS idx_transactions_user_id ON transactions(user_id)`,
+  `CREATE INDEX IF NOT EXISTS idx_transactions_reference ON transactions(reference)`,
 
   // ── updated_at trigger ───────────────────────────────────────
   `CREATE OR REPLACE FUNCTION update_updated_at()
@@ -127,6 +160,10 @@ const migrations = [
 
   `DROP TRIGGER IF EXISTS set_updated_at ON roles`,
   `CREATE TRIGGER set_updated_at BEFORE UPDATE ON roles
+   FOR EACH ROW EXECUTE FUNCTION update_updated_at()`,
+
+  `DROP TRIGGER IF EXISTS set_updated_at ON wallets`,
+  `CREATE TRIGGER set_updated_at BEFORE UPDATE ON wallets
    FOR EACH ROW EXECUTE FUNCTION update_updated_at()`,
 ];
 
