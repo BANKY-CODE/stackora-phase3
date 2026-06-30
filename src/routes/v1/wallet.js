@@ -18,9 +18,6 @@ const walletService = require('../../services/walletService');
  *   get:
  *     summary: Get wallet balance
  *     tags: [Wallet]
- *     responses:
- *       200:
- *         description: Current balance
  */
 router.get('/balance', authenticate, async (req, res, next) => {
   try {
@@ -28,10 +25,10 @@ router.get('/balance', authenticate, async (req, res, next) => {
     return success(res, {
       message: 'Balance fetched',
       data: {
-        balance:      result.balanceNaira,
-        balanceKobo:  result.balanceKobo,
-        currency:     result.currency,
-        isFrozen:     result.isFrozen,
+        balance:     result.balanceNaira,
+        balanceKobo: result.balanceKobo,
+        currency:    result.currency,
+        isFrozen:    result.isFrozen,
       },
     });
   } catch (err) {
@@ -92,12 +89,26 @@ router.post('/withdraw', authenticate, walletLimiter, [
  */
 router.post('/transfer', authenticate, walletLimiter, [
   walletAmount,
-  body('recipientId').isUUID().withMessage('recipientId must be a valid UUID'),
-], validate, (req, res) => {
-  return created(res, {
-    data:    { reference: 'placeholder-ref', amount: req.body.amount, status: 'pending' },
-    message: 'Transfer initiated (placeholder)',
-  });
+  body('recipientUsername').notEmpty().withMessage('recipientUsername is required'),
+], validate, async (req, res, next) => {
+  try {
+    const amountKobo = Math.round(Number(req.body.amount) * 100);
+    const result = await walletService.transfer(
+      req.user.id,
+      req.body.recipientUsername,
+      amountKobo,
+      req.body.note
+    );
+    return created(res, {
+      message: 'Transfer successful',
+      data: result,
+    });
+  } catch (err) {
+    if (err.status) {
+      return res.status(err.status).json({ success: false, message: err.message });
+    }
+    next(err);
+  }
 });
 
 /**
