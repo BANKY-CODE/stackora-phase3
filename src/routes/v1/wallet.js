@@ -9,11 +9,6 @@ const { getPagination } = require('../../utils/pagination');
 const walletService = require('../../services/walletService');
 const { query } = require('../../config/database');
 
-/**
- * @swagger
- * /wallet/balance:
- *   get: { summary: Get wallet balance, tags: [Wallet] }
- */
 router.get('/balance', authenticate, async (req, res, next) => {
   try {
     const result = await walletService.getBalance(req.user.id);
@@ -31,7 +26,6 @@ router.get('/balance', authenticate, async (req, res, next) => {
 
 // ──────────────────────────────────────────────────────────────
 // ⚠️ TEMPORARY TEST ROUTE — DELETE BEFORE GOING LIVE
-// Adds test money to the logged-in user's wallet. No real payment.
 // ──────────────────────────────────────────────────────────────
 router.post('/test-credit', authenticate, async (req, res, next) => {
   try {
@@ -59,21 +53,15 @@ router.post('/test-credit', authenticate, async (req, res, next) => {
   } catch (err) { next(err); }
 });
 
-/**
- * @swagger
- * /wallet/transactions:
- *   get: { summary: List wallet transactions, tags: [Wallet] }
- */
-router.get('/transactions', authenticate, paginationQuery, validate, (req, res) => {
-  const { page, limit } = getPagination(req.query);
-  return paginated(res, { data: [], total: 0, page, limit, message: 'Transactions fetched' });
+router.get('/transactions', authenticate, paginationQuery, validate, async (req, res, next) => {
+  try {
+    const { page, limit } = getPagination(req.query);
+    const offset = (page - 1) * limit;
+    const { transactions, total } = await walletService.getTransactions(req.user.id, limit, offset);
+    return paginated(res, { data: transactions, total, page, limit, message: 'Transactions fetched' });
+  } catch (err) { next(err); }
 });
 
-/**
- * @swagger
- * /wallet/fund:
- *   post: { summary: Fund wallet, tags: [Wallet] }
- */
 router.post('/fund', authenticate, walletLimiter, [walletAmount], validate, (req, res) => {
   return created(res, {
     data:    { reference: 'placeholder-ref', amount: req.body.amount, status: 'pending' },
@@ -81,11 +69,6 @@ router.post('/fund', authenticate, walletLimiter, [walletAmount], validate, (req
   });
 });
 
-/**
- * @swagger
- * /wallet/withdraw:
- *   post: { summary: Withdraw from wallet, tags: [Wallet] }
- */
 router.post('/withdraw', authenticate, walletLimiter, [
   walletAmount,
   body('accountNumber').notEmpty().withMessage('Account number is required'),
@@ -97,11 +80,6 @@ router.post('/withdraw', authenticate, walletLimiter, [
   });
 });
 
-/**
- * @swagger
- * /wallet/transfer:
- *   post: { summary: Transfer to another user, tags: [Wallet] }
- */
 router.post('/transfer', authenticate, walletLimiter, [
   walletAmount,
   body('recipientUsername').notEmpty().withMessage('recipientUsername is required'),
@@ -123,11 +101,6 @@ router.post('/transfer', authenticate, walletLimiter, [
   }
 });
 
-/**
- * @swagger
- * /wallet/vtu:
- *   post: { summary: Purchase a VTU service, tags: [Wallet] }
- */
 router.post('/vtu', authenticate, walletLimiter, [serviceType, walletAmount], validate, (req, res) => {
   return created(res, {
     data:    { reference: 'placeholder-ref', serviceType: req.body.serviceType, status: 'pending' },
